@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dubbo-consumer
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848
